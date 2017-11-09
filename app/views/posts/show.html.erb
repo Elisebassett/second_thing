@@ -1,0 +1,11 @@
+<h1>Post#show</h1>
+<p>Find me in app/views/post/show.html.erb</p>
+
+<h1><%= @post.title %></h1>
+<h4>By: <%= @user.first_name %> <%= @user.last_name %></h4>
+<p><%= @post.content %></p>
+
+<p><%= link_to "Edit", edit_post_path %> <%= link_to "Destroy", @post,  method: :delete %></p>
+
+
+<%= link_to "See All Posts", posts_path %>
