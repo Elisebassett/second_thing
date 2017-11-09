@@ -1,0 +1,9 @@
+<h1>Post#edit</h1>
+<p>Find me in app/views/post/edit.html.erb</p>
+
+<%= form_with model: @post do |f| %>
+	<%= f.text_field :title %>
+	<%= f.text_area :content %>
+	<%= f.submit %>
+<% end %>
+
